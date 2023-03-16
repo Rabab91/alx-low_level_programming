@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - A program that print the size of various compter types
- * Return 0 (Success)
+ * main - A program that print the size of various compter types using the printf function 
+ * Return: 0 (Success)
  */
 int main(void)
 {
@@ -10,10 +10,10 @@ int main(void)
         long int c;
         long long int d;
         float f;
-printf("Size of a char: %lu bute(s)\n", (usingned long)sizeof(a));
-printf("Size of a int: %lu bute(s)\n", (usingned long)sizeof(b));
-printf("Size of a long int: %lu bute(s)\n", (usingned long)sizeof(c));
-printf("Size of a long long int: %lu bute(s)\n", (usingned long)sizeof(d));
-printf("Size of a float: %lu bute(s)\n", (usingned long)sizeof(f));
+printf("Size of a char: %d byte(s)", sizeof(a));
+printf("Size of an int: %d byte(s)", sizeof(b));
+printf("Size of a long int: %d byte(s)", sizeof(c));
+printf("Size of a long long int: %d  byte(s)", sizeof(d));
+printf("Size of a float: %d  bute(s)", sizeof(f));
 return (0);
 }

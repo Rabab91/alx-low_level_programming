@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * print_alphabet - Make the alphabet
- *
- * Return: void
+ * print_alphabet - utilizes on the _putchar finction to print
+ * the alphabet a - z
  */
+
 void print_alphabet(void)
 {
-int c;
-
-for (c = 'a'; c <= 'z'; c++)
-_putchar(c);
-_putchar('\n');
+	int ch;
+	
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putcha(ch);
+	_putchar("\n")
 }

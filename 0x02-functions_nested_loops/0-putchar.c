@@ -1,19 +1,20 @@
-#include "main.h"
+#include  "main.h"
 /**
- * main-print -purchar and add anew line
- * i
- * Return: 0 (Success)
+ * main - prints vaule of string
+ * uses the putchar function
+ * Return: 0
  */
+
 int main(void)
 {
-	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
-	int count = 0, size;
-
-	size = sizeof(str) / sizeof(int);
-	do {
-		_putchar(str[count];
-		count++;
-	} while (count < size);
-	_putchar('\n);
-	return (0);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }

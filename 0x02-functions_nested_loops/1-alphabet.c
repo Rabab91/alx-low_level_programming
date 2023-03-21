@@ -1,17 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet - Enty point
- * Return: 0 (Success)
+ * print_alphabet_x10 - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char str;
+char str;
+int i = 0;
 
-	for (str = 'a'; str <= 'z'; str++)
-	{
-		_putchar(str);
-	}
-	_putchar("\n")
+while (i < 10)
+{
+for (str = 'a'; str <= 'z'; str++)
+{
+_putchar(str);
+}
+i++;
+_putchar('\n');
+}
 }

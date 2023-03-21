@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- * print_alphabet - utilizes on the _putchar finction to print
- * the alphabet a - z
+ * print_alphabet - Enty point
+ * Return: 0 (Success)
  */
 
 void print_alphabet(void)
 {
-	int ch;
-	
-	for (ch = 'a'; ch <= 'z'; ch++)
-		_putcha(ch);
+	char str;
+
+	for (str = 'a'; str <= 'z'; str++)
+	{
+		_putchar(str);
+	}
 	_putchar("\n")
 }

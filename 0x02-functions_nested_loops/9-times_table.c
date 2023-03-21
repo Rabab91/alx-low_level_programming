@@ -1,8 +1,8 @@
 #include "main.h"
 
-I/**
+/**
  * times_table - prints the 9 times table, starting with 0.
- * 
+ *
  * Return: Times table
  */
 

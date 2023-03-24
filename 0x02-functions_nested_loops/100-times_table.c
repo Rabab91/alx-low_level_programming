@@ -44,7 +44,7 @@ while (i <= n)
 j = 0;
 while (j <= n)
 {
-val = j * i;
+val = j *i;
 if (val > 9)
 {
 if (val > 99)

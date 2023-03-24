@@ -1,7 +1,4 @@
-
 #include "main.h"
-#include "times_table.h"
-
 
 /**
  * main - check the code.

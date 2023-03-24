@@ -1,49 +1,68 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_times_table - prints the n times table, starting with 0.
- * @n: integer
- * Return: Number matrix
+ * Step1 - is a condition made it cuz betty didnt stop complaining
+ *
+ * @i: same as i in our print_times_table
+ *
+ * @j: same as j in our print_times_table
+ *
+ * @val: same as val in our print_times_table
+ *
+ * Return: void
+ */
+void Step1(int i, int j, int val)
+{
+{
+_putchar(44);
+if (val / 100 == 0 || val >= 99)
+{
+_putchar(32);
+if ((i * (j + 1)) / 100 == 0)
+_putchar(32);
+}
+}
+}
+
+/**
+ * print_times_table - prints the @param times table, starting with 0
+ *
+ * @n: the parametre to decide which times table we want
+ *
+ * Return: void
  */
 
 void print_times_table(int n)
 {
-int x, y, z; 
+int i = 0, val, j;
 
-if (n >= 0 && n <= 14) 
+if (n <= 15 && n >= 0)
 {
-for (x = 0; x <= n; x++)
+while (i <= n)
 {
-for (y = 0; y <= n; y++)
+j = 0;
+while (j <= n)
 {
-z = x * y;
-if (z > 99)
+val = j * i;
+if (val > 9)
 {
-_putchar(',');
-_putchar(32);
-_putchar((z / 100) + '0');
-_putchar(((z / 10) % 10) + '0');
-_putchar((z % 10) + '0');
-}
-else if (z > 9)
-{
-_putchar(',');
-_putchar(32);
-_putchar(32);
-_putchar(((z / 10) % 10) + '0');
-_putchar((z % 10) + '0');
+if (val > 99)
+_putchar((val / 100) + '0');
+_putchar((val / 10) % 10 + '0');
+_putchar((val % 10) + '0');
 }
 else
 {
-if (y != 0)
-{
-_putchar(',');
+if (j != 0)
 _putchar(32);
-_putchar(32);
-_putchar(32);
+_putchar(val + '0');
 }
-_putchar(z + '0');
+if (j < n)
+Step1(i, j, val);
+j++;
 }
-}
+i++;
 _putchar('\n');
 }
 }

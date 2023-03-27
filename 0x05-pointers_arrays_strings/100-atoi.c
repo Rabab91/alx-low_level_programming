@@ -38,6 +38,7 @@ r = 0;
 }
 a++;
 }
+
 if (r == 0)
 return (0);
 return (o);

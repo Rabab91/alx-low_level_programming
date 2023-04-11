@@ -12,5 +12,6 @@ char **strtow(char *str);
 void simple_print_buffer(char *buffer, unsigned int size);
 int main(void);
 char *_strdup(char *str);
+void print_grid(int **grid, int width, int height);
 
 #endif

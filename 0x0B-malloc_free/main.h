@@ -10,9 +10,8 @@ void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
 void simple_print_buffer(char *buffer, unsigned int size);
-int main(void);
 char *_strdup(char *str);
 void print_grid(int **grid, int width, int height);
-
+int main(int ac, char *av[]);
 
 #endif
